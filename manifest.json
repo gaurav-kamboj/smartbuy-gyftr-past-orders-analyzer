@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Gyftr Past Orders Analyzer",
+  "version": "1.0.0",
+  "description": "Analyze your Gyftr SmartBuy past orders (current month & last year) grouped by voucher name, right on the mytransactions page.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.gyftr.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.gyftr.com/instantvouchers/mytransactions*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "inpage.js"
+      ],
+      "matches": [
+        "https://www.gyftr.com/*"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

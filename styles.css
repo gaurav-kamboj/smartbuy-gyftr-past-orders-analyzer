@@ -1,0 +1,109 @@
+/* styles.css */
+#gyftr-analyzer-btn {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2147483647;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 12px;
+  background: #0f62fe;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+#gyftr-analyzer-btn:hover { filter: brightness(1.05); }
+
+.gyftr-analyzer-toast {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 84px;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  z-index: 2147483647;
+}
+
+#gyftr-analyzer-modal .gyftr-analyzer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 2147483646;
+}
+#gyftr-analyzer-modal .gyftr-analyzer-dialog {
+  position: fixed;
+  top: 6vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1000px, 92vw);
+  max-height: 88vh;
+  overflow: auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  z-index: 2147483647;
+}
+#gyftr-analyzer-modal .gyftr-analyzer-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #eee;
+}
+#gyftr-analyzer-modal .gyftr-analyzer-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+#gyftr-analyzer-modal .gyftr-analyzer-header .gyftr-analyzer-spacer { flex: 1; }
+#gyftr-analyzer-modal .gyftr-analyzer-btnsmall {
+  border: 1px solid #ddd;
+  background: #fafafa;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#gyftr-analyzer-modal .gyftr-analyzer-btnsmall:hover { background: #f0f0f0; }
+
+#gyftr-analyzer-modal .gyftr-analyzer-content {
+  padding: 12px 16px 20px;
+  font-size: 14px;
+}
+#gyftr-analyzer-modal .gyftr-analyzer-note {
+  background: #f8f9ff;
+  border: 1px solid #e5e9ff;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin: 8px 0 14px;
+}
+#gyftr-analyzer-modal .gyftr-analyzer-section { margin-bottom: 16px; }
+#gyftr-analyzer-modal .gyftr-analyzer-section h3 { margin: 10px 0; }
+
+#gyftr-analyzer-modal .gyftr-analyzer-tablewrap { overflow: auto; }
+#gyftr-analyzer-modal table.gyftr-analyzer-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#gyftr-analyzer-modal table.gyftr-analyzer-table th,
+#gyftr-analyzer-modal table.gyftr-analyzer-table td {
+  border: 1px solid #eee;
+  padding: 8px 10px;
+  text-align: right;
+}
+#gyftr-analyzer-modal table.gyftr-analyzer-table th:first-child,
+#gyftr-analyzer-modal table.gyftr-analyzer-table td:first-child {
+  text-align: left;
+}
+#gyftr-analyzer-modal table.gyftr-analyzer-table tfoot tr.total td {
+  font-weight: 700;
+  background: #fafafa;
+}
+
+#gyftr-analyzer-modal .gyftr-analyzer-foot {
+  margin-top: 8px;
+  color: #666;
+  font-size: 12px;
+}
